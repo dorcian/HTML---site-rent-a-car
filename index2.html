@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>21Rent</title>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3DgrKE5up5Hn6C6z9SBt1/1PBBn3E2fVb2i6a" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main-div">
+        <img class="main-image" src="masina-index_copy.png" alt="Main Image">
+
+        <div class="profile">
+            <button>Profile</button>
+        </div>
+
+        <div class="manage-bookings">
+            <button>Manage Bookings</button>
+        </div>
+
+        <div class="logo-div">
+            <button class="buton-logo" onclick="handleButtonClick()">
+                <svg width="98" height="23" viewBox="0 0 98 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.63 8.27V6.68C11.63 6.08 11.33 5.78 10.73 5.78H5.51V9.17H10.73C11.33 9.17 11.63 8.87 11.63 8.27ZM16.94 23H11.78C11.69 22.73 11.63 22.37 11.63 21.8V14.9C11.63 14.3 11.33 14 10.73 14H5.51V23H0.32V0.199998H12.59C15.35 0.199998 16.73 1.61 16.73 4.46V8.06C16.73 10.13 15.89 11.3 14.21 11.6C16.01 11.99 16.79 13.07 16.79 14.87V21.62C16.79 22.43 16.85 22.7 16.94 23ZM33.6144 23H19.3044V0.199998H33.5544V5.84H24.5244V9.08H32.3244V13.91H24.5244V17.27H33.6144V23ZM53.1699 23H48.8199L40.9299 10.94V23H35.7399V0.199998H40.7199L47.9799 12.11V0.199998H53.1699V23ZM65.3783 23H60.2183V5.93H54.9983V0.199998H70.5983V5.93H65.3783V23ZM97.5575 23H92.3375V6.83C92.3375 6.23 92.0375 5.93 91.4375 5.93H90.2975V0.199998H93.4175C96.1775 0.199998 97.5575 1.58 97.5575 4.34V23Z"
+                        fill="white" />
+                    <path
+                        d="M88.7403 23H72.2703V13.01C72.2703 10.34 73.5903 8.99 76.2603 8.99H82.3503C83.1603 8.99 83.5503 8.6 83.5503 7.79V7.13C83.5503 6.35 83.1603 5.93 82.3503 5.93H72.6603V0.199998H84.6603C87.3903 0.199998 88.7403 1.64 88.7403 4.55V10.19C88.7403 12.86 87.3303 14.18 84.5403 14.18H78.5703C77.7903 14.18 77.4003 14.57 77.4003 15.38V17.27H88.7403V23Z"
+                        fill="#FF0000" />
+                </svg>
+
+            </button>
+        </div>
+
+
+        
+        <div class="white-box">
+            <div class="input-container">
+                <label for="location" class="pick-up-location">Pick up location</label>
+                <select id="location" class="select-location">
+                    <option value="Select a location">Select a location</option>
+                    <option value="Bucharest Airport">Bucharest Airport</option>
+                    <option value="21Rent Pipera">21Rent Pipera</option>
+                    <option value="Cluj Airport">Cluj Airport</option>
+                    <option value="Timisoara Airport">Timisoara Airport</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label for="dates" class="pick-up-return-date">Pick up & Return Date</label>
+                <div class="date-inputs">
+                    <input id="pick-up-date" class="date1" type="date" placeholder="Pick up Date" />
+                    <input id="return-date" class="date2" type="date" placeholder="Return Date"
+                     />
+                     
+                </div>
+                
+            </div>
+
+            <button class="show-button">Show</button>
+        </div>
+
+        <div class="cars">
+            <div class="icon-container">
+                <img class="icon-img" src="handshake.png" alt="Icon image">
+                <p class="icon-text">Seamless booking process</p>
+            </div>
+            <div class="icon-container">
+                <img class="icon-img" src="money.png" alt="Icon image">
+                <p class="icon-text">Great prices</p>
+            </div>
+            <div class="icon-container">
+                <img class="icon-img" src="car.jpg" alt="Icon image">
+                <p class="icon-text">Wide selection of vehicles</p>
+            </div>
+        </div>
+
+        <div class="title">
+        <h1 class="title-text">RECOMMENDED VEHICLES</h1>
+        </div>
+    </div>
+    
+</body>
+
+</html>

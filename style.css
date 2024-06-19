@@ -1,0 +1,179 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Comfortaa';
+}
+
+.main-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.cars {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    gap: 10%;
+    padding-top: 12%;
+}
+
+.icon-container {
+    display: flex; /*Use flexbox to align items vertically */
+    flex-direction: column; /* Align children (image and text) in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.icon-img {
+    width: 90px; /* Set a fixed width */
+    height: 90px;
+    /* height: 10%; Set a fixed height */
+    object-fit: cover; 
+}
+
+.icon-text {
+    text-align: center; /* Center text under the image */
+    margin-top: 5px; /* Space between the image and text */
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.profile,
+.manage-bookings,
+.logo-div {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+}
+
+.profile {
+    right: 30px;
+}
+
+.manage-bookings {
+    right: 140px;
+}
+
+.logo-div {
+    left: 30px;
+}
+
+.profile button,
+.manage-bookings button,
+.buton-logo {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.profile button:hover,
+.manage-bookings button:hover,
+.buton-logo:hover {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+
+.white-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 900px;
+    height: auto;
+    max-height: 150px;
+    background-color: white;
+    z-index: 1000;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.white-box {
+    top: 30%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.select-location {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    padding: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 0px;
+}
+
+.date1, .date2 {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+
+.show-button {
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    color: white;
+    padding: 3%;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    width: 121px;
+    height: 100%;
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
+.title-text {
+    text-align: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: bolder;
+    justify-content: center;
+    margin-top: 7%;
+    font-family: 'Bebas Neue', sans-serif; 
+    letter-spacing: 0.5px; 
+}
