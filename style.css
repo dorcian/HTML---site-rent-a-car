@@ -167,6 +167,8 @@ label {
     border-color: #FF0000;
 }
 
+
+
 .title-text {
     text-align: center;
     display: flex;
@@ -176,4 +178,53 @@ label {
     margin-top: 7%;
     font-family: 'Bebas Neue', sans-serif; 
     letter-spacing: 0.5px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 1%;
+    flex-direction: row;
+}
+
+.grid-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.grid-item img, .grid-item svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.centered-button {
+    position: absolute; /* Absolute positioning for precise control */
+    bottom: 6%; /* Position at the bottom of the container */
+    left: 50%; /* Center horizontally within container */
+    transform: translateX(-50%); 
+    cursor: pointer;
+    font-size: 25px;
+    height: 10%;
+    width: 20%;
+    color: white;
+    border-radius: 10px;
+    background-color: #FF0000;
+}
+
+.text-rent-car {
+    position: absolute;
+    top: 2%;
+    font-size: 20px;
+}
+
+.text-rent-price {
+    position: absolute;
+    top: 10%;
+    font-size: 15px;
 }
