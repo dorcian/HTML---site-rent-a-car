@@ -35,7 +35,7 @@ html, body {
     display: flex; /* Use flexbox to align items horizontally */
     justify-content: center; /* Center items horizontally */
     gap: 10%;
-    padding-top: 12%;
+    padding: 2%
 }
 
 .icon-container {
@@ -98,26 +98,25 @@ html, body {
 
 .white-box {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 780px;
     max-width: 900px;
-    height: auto;
+    height: 110px;
     max-height: 150px;
     background-color: white;
     z-index: 1000;
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items:center;
-    padding: 20px;
     border-radius: 25px;
-    box-sizing: border-box;
+    padding-left: 20px;
+    
+
 }
 
-.white-box {
-    top: 30%;
-}
+
 
 .input-container {
     display: flex;
@@ -131,40 +130,84 @@ label {
 }
 
 .select-location {
-    width: 100%;
-    height: 45px;
-    font-size: 20px;
-    padding: 10px;
-    border: 0.5px solid black;
+    position: absolute;
+    height: 39px;
+    width: 350px;
+    bottom: 20%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .date-inputs {
-    display: flex;
-    gap: 0px;
+    
 }
 
-.date1, .date2 {
-    width: 100%;
-    height: 30px;
-    font-size: 20px;
-    padding: 10px;
-    border: 0.5px solid black;
-    border-radius: 10px;
+.date1 {
+    position: absolute;
+    height: 33px;
+    bottom: 20%;
+    width: 100px;
+    right: 140px;
+    padding: 2px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    
+} 
+
+.date2 {
+    position: absolute;
+    bottom: 20%;
+    height: 33px;
+    width: 100px;   
+    right: 245px;
+    padding: 2px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+
 }
 
 .show-button {
-    cursor: pointer;
-    display: block;
-    font-size: 25px;
-    color: white;
-    padding: 3%;
-    border: 0.5px solid black;
-    border-radius: 20px;
-    width: 121px;
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 100%;
-    background-color: #FF0000;
-    border-color: #FF0000;
+    width: 120px;
+    background-color:#FF0000 ;
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.pick-up-location {
+    position: absolute;
+    margin: 0px;
+    top: 25%;
+    left: 17%;
+    font-size: 15px;
+}
+
+.pick-up-date {
+    position: absolute;
+    top: 25%;
+    right: 145px;
+    font-size: 15px;
+}
+
+.title {
+    padding-bottom: 100px;
 }
 
 .title-text {
@@ -176,4 +219,28 @@ label {
     margin-top: 7%;
     font-family: 'Bebas Neue', sans-serif; 
     letter-spacing: 0.5px; 
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-left: 240px;
+    margin-right: 240px;
+    
+}
+
+.car-grid button {
+    border-radius: 25px;
+    border-color: transparent;  
+    background-color: transparent;
+    cursor: pointer;
+
+    padding: 0px;
+}
+
+.car-grid button:hover {
+    border-color: rgb(35, 133, 224);
+    border-radius: 30px;
 }

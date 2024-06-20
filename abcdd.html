@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Comfortaa';
+        }
+
+        .main-div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .white-box {
+            margin-top: 30%;
+            margin-left: 50%;
+            height: 120px;
+            width: 780px;
+            display: flex;
+            flex-direction: row;
+            background-color: lightblue;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            padding-left: 20px;
+            position: fixed;
+        }
+
+        .select-location {
+            position: relative;
+            width: 300px;
+            height: 33px;
+            top: 60px;
+            
+        }
+
+        .p1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="white-box">
+            <select class="select-location">
+                <option value="Select a location">Select a location</option>
+            </select>
+            <p class="p1">Select location</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
